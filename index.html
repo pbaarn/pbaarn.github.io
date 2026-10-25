@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paul Baarn — Selected Works & Practice Folio</title>
-  <meta name="description" content="Gecureerd overzicht van 16 webapplicaties, deliberate practice tools en muziektheorie engines van Paul Baarn." />
+  <meta name="description" content="Gecureerd overzicht van 17 webapplicaties, deliberate practice tools en muziektheorie engines van Paul Baarn." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✒</text></svg>">
   
   <!-- Google Fonts: Fraunces (Editorial Serif), Inter (Clean Sans), Geist Mono -->
@@ -757,7 +757,7 @@
         Applications & <span>Practice Canvas</span>
       </h1>
       <p class="hero-desc">
-        Gecureerd overzicht van 16 actieve webapplicaties, muziektheorie trainers en deliberate practice systemen gehost via GitHub Pages. Klik op een kaart of lijstitem om direct naar de applicatie te gaan.
+        Gecureerd overzicht van 17 actieve webapplicaties, muziektheorie trainers en deliberate practice systemen gehost via GitHub Pages. Klik op een kaart of lijstitem om direct naar de applicatie te gaan.
       </p>
     </div>
 
@@ -779,9 +779,9 @@
 
       <!-- Category Filter Tabs -->
       <div class="category-tabs" id="category-tabs">
-        <button class="category-btn active" data-cat="all">Alle (<span id="count-all">16</span>)</button>
+        <button class="category-btn active" data-cat="all">Alle (<span id="count-all">17</span>)</button>
         <button class="category-btn" data-cat="music">🎹 Muziek & Piano (<span id="count-music">8</span>)</button>
-        <button class="category-btn" data-cat="productivity">⚡ Focus & Practice (<span id="count-productivity">5</span>)</button>
+        <button class="category-btn" data-cat="productivity">⚡ Focus & Practice (<span id="count-productivity">6</span>)</button>
         <button class="category-btn" data-cat="fitness">🏃‍♂️ Sport & Interval (<span id="count-fitness">1</span>)</button>
         <button class="category-btn" data-cat="trello">📋 Trello (<span id="count-trello">2</span>)</button>
       </div>
@@ -809,7 +809,7 @@
         <a href="https://github.com/pbaarn/pbaarn.github.io" target="_blank" rel="noopener noreferrer">pbaarn/pbaarn.github.io</a>
       </div>
       <div>
-        <span>Editorial Journal Design &bull; 16 Apps Live</span>
+        <span>Editorial Journal Design &bull; <span id="footer-app-count">17 Apps Live</span></span>
       </div>
     </div>
   </footer>
@@ -867,6 +867,19 @@
         github: 'https://github.com/pbaarn/momentum',
         tags: ['WOOP', 'Productivity', 'Flow', 'TypeScript'],
         icon: '⚡',
+        featured: true
+      },
+      {
+        id: 'brainstorm',
+        title: 'Brainstorm Manager',
+        subtitle: 'Subject Decomposition & Concept Board',
+        description: 'Local-first brainstorm- en subject-decompositie canvas. Breek onderwerpen op in categorieën en aspecten, importeer AI-prompts en synchroniseer optioneel met GitHub Gists.',
+        category: 'productivity',
+        categoryLabel: 'Focus & Practice',
+        url: 'https://pbaarn.github.io/brainstorm/',
+        github: 'https://github.com/pbaarn/brainstorm',
+        tags: ['Brainstorm', 'Local-First', 'Decomposition', 'Gist Sync'],
+        icon: '💡',
         featured: true
       },
       {
@@ -1246,8 +1259,27 @@
       }
     });
 
+    // UPDATE DYNAMIC COUNTERS
+    function updateCounts() {
+      const counts = { all: APPS.length };
+      APPS.forEach(app => {
+        counts[app.category] = (counts[app.category] || 0) + 1;
+      });
+      ['all', 'music', 'productivity', 'fitness', 'trello'].forEach(cat => {
+        const el = document.getElementById(`count-${cat}`);
+        if (el && counts[cat] !== undefined) {
+          el.textContent = counts[cat];
+        }
+      });
+      const footerCount = document.getElementById('footer-app-count');
+      if (footerCount) {
+        footerCount.textContent = `${APPS.length} Apps Live`;
+      }
+    }
+
     // INITIALIZATION
     syncControls();
+    updateCounts();
     renderApps();
   </script>
 </body>

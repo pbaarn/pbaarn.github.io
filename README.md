@@ -1,6 +1,25 @@
 # pbaarn.github.io — Personal App Directory & Hub
 
-Een moderne, minimalistische portaalpagina die al je 16 webapplicaties en tools bundelt die gehost worden via GitHub Pages.
+Een moderne, minimalistische portaalpagina die al je 17 webapplicaties en tools bundelt die gehost worden via GitHub Pages.
+
+### Overzicht van actieve applicaties:
+1. **Piano Oefenagenda** (`/pianoagenda/`) — Deliberate Practice & Lessenaar Planner
+2. **AetherMidi** (`/orbit/`) — Visual MIDI Music Generator
+3. **Experilife // Protocol Studio** (`/experilife/`) — Empirical Sandbox & Life Design
+4. **MOMENTUM // Frogeater** (`/momentum/`) — Anti-uitstel Canvas
+5. **Brainstorm Manager** (`/brainstorm/`) — Concept Decomposition & Gist Sync
+6. **Harmonic Canvas** (`/harmonic/`) — Harmonic & Chord Explorer
+7. **20 Hours to Mastery** (`/twentyhours/`) — Deliberate Practice Ledger
+8. **Harmonic Circle** (`/circle/`) — Chord Progression Studio
+9. **Progressions Engine** (`/progressions/`) — Piano Progression Drill Engine
+10. **Cadence** (`/chordtrainer/`) — Piano Chord Recall Trainer
+11. **Piano Chord Practice Grid** (`/chord-recall/`) — 12-Key Boring Chord Trainer
+12. **SONUS** (`/ear-training/`) — Premium Ear Training
+13. **Crosstrainer Canvas** (`/crosstrainer/`) — Interval & Schema Timer
+14. **AI 365** (`/ai365/`) — Dagelijkse AI Integratie Tracker
+15. **Checklist Manager** (`/checklist-manager/`) — Editorial Execution Protocols
+16. **Checklist Estimator** (`/checklist-estimator/`) — Trello Power-Up Connector
+17. **Checklist+ Power-Up** (`/powerup/`) — Trello Power-Up Suite
 
 ## 🚀 Hoe live te zetten op GitHub Pages
 
