@@ -1,6 +1,6 @@
 # pbaarn.github.io — Personal App Directory & Hub
 
-Een moderne, minimalistische portaalpagina die al je 17 webapplicaties en tools bundelt die gehost worden via GitHub Pages.
+Een moderne, minimalistische portaalpagina die al je 20 webapplicaties en tools bundelt die gehost worden via GitHub Pages.
 
 ### Overzicht van actieve applicaties:
 1. **Piano Oefenagenda** (`/pianoagenda/`) — Deliberate Practice & Lessenaar Planner
@@ -8,18 +8,21 @@ Een moderne, minimalistische portaalpagina die al je 17 webapplicaties en tools 
 3. **Experilife // Protocol Studio** (`/experilife/`) — Empirical Sandbox & Life Design
 4. **MOMENTUM // Frogeater** (`/momentum/`) — Anti-uitstel Canvas
 5. **Brainstorm Manager** (`/brainstorm/`) — Concept Decomposition & Gist Sync
-6. **Harmonic Canvas** (`/harmonic/`) — Harmonic & Chord Explorer
-7. **20 Hours to Mastery** (`/twentyhours/`) — Deliberate Practice Ledger
-8. **Harmonic Circle** (`/circle/`) — Chord Progression Studio
-9. **Progressions Engine** (`/progressions/`) — Piano Progression Drill Engine
-10. **Cadence** (`/chordtrainer/`) — Piano Chord Recall Trainer
-11. **Piano Chord Practice Grid** (`/chord-recall/`) — 12-Key Boring Chord Trainer
-12. **SONUS** (`/ear-training/`) — Premium Ear Training
-13. **Crosstrainer Canvas** (`/crosstrainer/`) — Interval & Schema Timer
-14. **AI 365** (`/ai365/`) — Dagelijkse AI Integratie Tracker
-15. **Checklist Manager** (`/checklist-manager/`) — Editorial Execution Protocols
-16. **Checklist Estimator** (`/checklist-estimator/`) — Trello Power-Up Connector
-17. **Checklist+ Power-Up** (`/powerup/`) — Trello Power-Up Suite
+6. **HarmonyLab** (`/harmonylab/`) — Top-Note Chord Voicing & Reharmonization
+7. **TijdBewust // Dagdeel Planner** (`/dagplanner/`) — Offline-First Half-Hour Time-Blocking
+8. **Salsa Figuren Lab** (`/figures/`) — Salsa Combinatie Generator & Collectie
+9. **Harmonic Canvas** (`/harmonic/`) — Harmonic & Chord Explorer
+10. **20 Hours to Mastery** (`/twentyhours/`) — Deliberate Practice Ledger
+11. **Harmonic Circle** (`/circle/`) — Chord Progression Studio
+12. **Progressions Engine** (`/progressions/`) — Piano Progression Drill Engine
+13. **Cadence** (`/chordtrainer/`) — Piano Chord Recall Trainer
+14. **Piano Chord Practice Grid** (`/chord-recall/`) — 12-Key Boring Chord Trainer
+15. **SONUS** (`/ear-training/`) — Premium Ear Training
+16. **Crosstrainer Canvas** (`/crosstrainer/`) — Interval & Schema Timer
+17. **AI 365** (`/ai365/`) — Dagelijkse AI Integratie Tracker
+18. **Checklist Manager** (`/checklist-manager/`) — Editorial Execution Protocols
+19. **Checklist Estimator** (`/checklist-estimator/`) — Trello Power-Up Connector
+20. **Checklist+ Power-Up** (`/powerup/`) — Trello Power-Up Suite
 
 ## 🚀 Hoe live te zetten op GitHub Pages
 

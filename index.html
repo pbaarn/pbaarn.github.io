@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paul Baarn — Selected Works & Practice Folio</title>
-  <meta name="description" content="Gecureerd overzicht van 17 webapplicaties, deliberate practice tools en muziektheorie engines van Paul Baarn." />
+  <meta name="description" content="Gecureerd overzicht van 20 webapplicaties, deliberate practice tools en muziektheorie engines van Paul Baarn." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✒</text></svg>">
   
   <!-- Google Fonts: Fraunces (Editorial Serif), Inter (Clean Sans), Geist Mono -->
@@ -757,7 +757,7 @@
         Applications & <span>Practice Canvas</span>
       </h1>
       <p class="hero-desc">
-        Gecureerd overzicht van 17 actieve webapplicaties, muziektheorie trainers en deliberate practice systemen gehost via GitHub Pages. Klik op een kaart of lijstitem om direct naar de applicatie te gaan.
+        Gecureerd overzicht van <span id="hero-app-count">20</span> actieve webapplicaties, muziektheorie trainers en deliberate practice systemen gehost via GitHub Pages. Klik op een kaart of lijstitem om direct naar de applicatie te gaan.
       </p>
     </div>
 
@@ -779,9 +779,9 @@
 
       <!-- Category Filter Tabs -->
       <div class="category-tabs" id="category-tabs">
-        <button class="category-btn active" data-cat="all">Alle (<span id="count-all">17</span>)</button>
-        <button class="category-btn" data-cat="music">🎹 Muziek & Piano (<span id="count-music">8</span>)</button>
-        <button class="category-btn" data-cat="productivity">⚡ Focus & Practice (<span id="count-productivity">6</span>)</button>
+        <button class="category-btn active" data-cat="all">Alle (<span id="count-all">20</span>)</button>
+        <button class="category-btn" data-cat="music">🎹 Muziek & Piano (<span id="count-music">9</span>)</button>
+        <button class="category-btn" data-cat="productivity">⚡ Focus & Practice (<span id="count-productivity">8</span>)</button>
         <button class="category-btn" data-cat="fitness">🏃‍♂️ Sport & Interval (<span id="count-fitness">1</span>)</button>
         <button class="category-btn" data-cat="trello">📋 Trello (<span id="count-trello">2</span>)</button>
       </div>
@@ -809,7 +809,7 @@
         <a href="https://github.com/pbaarn/pbaarn.github.io" target="_blank" rel="noopener noreferrer">pbaarn/pbaarn.github.io</a>
       </div>
       <div>
-        <span>Editorial Journal Design &bull; <span id="footer-app-count">17 Apps Live</span></span>
+        <span>Editorial Journal Design &bull; <span id="footer-app-count">20 Apps Live</span></span>
       </div>
     </div>
   </footer>
@@ -881,6 +881,43 @@
         tags: ['Brainstorm', 'Local-First', 'Decomposition', 'Gist Sync'],
         icon: '💡',
         featured: true
+      },
+      {
+        id: 'harmonylab',
+        title: 'HarmonyLab',
+        subtitle: 'Top-Note Chord Voicing & Reharmonization',
+        description: 'Piano chord voicing en reharmonization studio waarin akkoorden worden gefilterd op melodietoon (top note), met 61-toetsen visualizer, 4/4 sequencer en Logic Pro MIDI-export.',
+        category: 'music',
+        categoryLabel: 'Muziek & Piano',
+        url: 'https://pbaarn.github.io/harmonylab/',
+        github: 'https://github.com/pbaarn/harmonylab',
+        tags: ['Next.js', 'TypeScript', 'Tonal.js', 'MIDI'],
+        icon: '🎹',
+        featured: true
+      },
+      {
+        id: 'dagplanner',
+        title: 'TijdBewust // Dagdeel Planner',
+        subtitle: 'Offline-First Half-Hour Time-Blocking',
+        description: 'Offline-first dagdeelplanner voor bewust omgaan met je vrije tijd. Plan in blokken van 30 minuten met vaste activiteitentemplates, live Nu-indicator, export en GitHub Gist sync.',
+        category: 'productivity',
+        categoryLabel: 'Focus & Practice',
+        url: 'https://pbaarn.github.io/dagplanner/',
+        github: 'https://github.com/pbaarn/dagplanner',
+        tags: ['Time-Blocking', 'PWA', 'Offline-First', 'Gist Sync'],
+        icon: '🗓️'
+      },
+      {
+        id: 'figures',
+        title: 'Salsa Figuren Lab',
+        subtitle: 'Salsa Combinatie Generator & Collectie',
+        description: 'Genereer willekeurige of handmatige salsa-combinaties voor Leider en Volger met slotje, bewaar favorieten met notities en synchroniseer via GitHub Gist.',
+        category: 'productivity',
+        categoryLabel: 'Focus & Practice',
+        url: 'https://pbaarn.github.io/figures/',
+        github: 'https://github.com/pbaarn/figures',
+        tags: ['Salsa', 'Generator', 'LocalStorage', 'Gist Sync'],
+        icon: '💃'
       },
       {
         id: 'harmonic',
@@ -1271,6 +1308,10 @@
           el.textContent = counts[cat];
         }
       });
+      const heroCount = document.getElementById('hero-app-count');
+      if (heroCount) {
+        heroCount.textContent = APPS.length;
+      }
       const footerCount = document.getElementById('footer-app-count');
       if (footerCount) {
         footerCount.textContent = `${APPS.length} Apps Live`;
